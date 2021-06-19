@@ -1,0 +1,33 @@
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #cdcdcd;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: var(--hover-color);
+}
+
+.floating-label-container{
+  margin-top: 20px;
+}
+
+.floating-label {
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: gray;
+  transition: all 0.15s ease-out;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.floating-label.active {
+  font-size: smaller;
+  transform: translate(-50%, -63%);
+}
